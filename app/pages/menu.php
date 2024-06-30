@@ -7,13 +7,17 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
 ?>
 <link rel="stylesheet" href="../public/css/menu.css">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#filterNav"
-        aria-controls="filterNav" aria-expanded="false" aria-label="Toggle navigation">
+
+<nav class="navbar navbar-expand-lg navbar-custom mt-5 mx-auto" style="max-width: 1140px;">
+    <button class="navbar-toggler navbar-toggler-white" type="button" data-toggle="collapse" data-target="#filterNav" aria-controls="filterNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="filterNav">
-        <ul class="navbar-nav mx-auto">
+        <form class="form-inline my-2 my-lg-0 mx-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Search" id="search-input">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="button" id="search-button">Buscar</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link filter-link" href="?categoria=computadoras">Computadoras</a>
             </li>
@@ -36,18 +40,19 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
     </div>
 </nav>
 
-<div class="container mt-4">
+<div class="container mt-4" style="max-width: 1140px;">
     <div class="row" id="product-container">
         <?php
         foreach ($productos_categoria as $producto) {
             echo '
-            <div class="col-md-3 card-custom">
-                <div class="card h-100">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm card-custom">
                     <img src="' . $producto['img'] . '" class="card-img-top" alt="' . $producto['title'] . '">
                     <div class="card-body">
                         <h5 class="card-title">' . $producto['title'] . '</h5>
                         <p class="card-text">' . $producto['description'] . '</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <p class="card-text font-weight-bold text-primary">$' . $producto['precio'] . '</p>
+                        <a href="#" class="btn btn-success btn-block">Añadir</a>
                     </div>
                 </div>
             </div>';
@@ -77,31 +82,36 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
                             <th>Cantidad</th>
                             <th>Precio</th>
                             <th>Total</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="cart-items">
+                        <tr data-product-id="1">
                             <td>Producto 1</td>
                             <td>
-                                <input type="number" class="form-control form-control-sm text-center"
-                                    style="width: 60px; display: inline;" value="1" min="1">
+                                <input type="number" class="form-control form-control-sm text-center quantity" value="1" min="1">
                             </td>
                             <td>$100</td>
-                            <td>$100</td>
+                            <td class="item-total">$100</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm remove-item">Eliminar</button>
+                            </td>
                         </tr>
-                        <tr>
+                        <tr data-product-id="2">
                             <td>Producto 2</td>
                             <td>
-                                <input type="number" class="form-control form-control-sm text-center"
-                                    style="width: 60px; display: inline;" value="2" min="1">
+                                <input type="number" class="form-control form-control-sm text-center quantity" value="2" min="1">
                             </td>
                             <td>$50</td>
-                            <td>$100</td>
+                            <td class="item-total">$100</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm remove-item">Eliminar</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="text-right">
-                    <h5>Total: $200</h5>
+                    <h5>Total: $<span id="cart-total">200</span></h5>
                 </div>
             </div>
             <div class="modal-footer">
@@ -111,5 +121,4 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
         </div>
     </div>
 </div>
-
 <?php include '../shared/footer.php'; ?>

@@ -5,35 +5,35 @@
             "title": "Computadora Gamer XYZ",
             "description": "PC Gaming de alto rendimiento",
             "precio": 1500,
-            "img": "https://images.pexels.com/photos/4042805/pexels-photo-4042805.jpeg"
+            "img": "https://images.pexels.com/photos/470929/pexels-photo-470929.jpeg"
         },
         {
             "id": 2,
             "title": "Computadora Gamer ABC",
             "description": "PC Gaming con los últimos componentes",
             "precio": 1200,
-            "img": "https://images.pexels.com/photos/4042806/pexels-photo-4042806.jpeg"
+            "img": "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg"
         },
         {
             "id": 3,
             "title": "Computadora Gamer DEF",
             "description": "PC Gaming económica",
             "precio": 800,
-            "img": "https://images.pexels.com/photos/4042807/pexels-photo-4042807.jpeg"
+            "img": "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg"
         },
         {
             "id": 4,
             "title": "Computadora Gamer GHI",
             "description": "PC Gaming para eSports",
             "precio": 1300,
-            "img": "https://images.pexels.com/photos/4042808/pexels-photo-4042808.jpeg"
+            "img": "https://images.pexels.com/photos/2478241/pexels-photo-2478241.jpeg"
         },
         {
             "id": 5,
             "title": "Computadora Gamer JKL",
             "description": "PC Gaming con RGB",
             "precio": 1100,
-            "img": "https://images.pexels.com/photos/4042809/pexels-photo-4042809.jpeg"
+            "img": "https://images.pexels.com/photos/3145420/pexels-photo-3145420.jpeg"
         }
     ],
     "accesorios": [
@@ -207,18 +207,11 @@
             "img": "https://images.pexels.com/photos/4042832/pexels-photo-4042832.jpeg"
         },
         {
-            "id": 29,
-            "title": "Combo Gamer GHI",
-            "description": "Combo de ratón y mousepad",
-            "precio": 120,
-            "img": "https://images.pexels.com/photos/4042833/pexels-photo-4042833.jpeg"
-        },
-        {
             "id": 30,
             "title": "Combo Gamer JKL",
             "description": "Combo de auriculares y ratón",
             "precio": 160,
-            "img": "https://images.pexels.com/photos/4042834/pexels-photo-4042834.jpeg"
+            "img": "https://images.pexels.com/photos/4042832/pexels-photo-4042832.jpeg"
         }
     ]
 }

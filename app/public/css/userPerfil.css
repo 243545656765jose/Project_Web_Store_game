@@ -1,0 +1,14 @@
+.container-custom {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.table_dark {
+    color: rgb(10, 10, 10);
+    background-color: #dbdbdb;
+    border: 1px solid black;
+    
+}
