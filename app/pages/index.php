@@ -17,10 +17,10 @@
                 </div>
             </div>
             <div class="login-right">
-                <h4 class="text-center">Sign in to the site</h4>
+                <h4 class="text-center text-white">Sign in to the site</h4>
                 <form action="../actions/login_handler.php" method="POST">
                     <div class="form-group">
-                        <label for="username">Username</label>
+                        <label for="username" class="text-white">Username</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password" class="text-white">Password</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
@@ -46,3 +46,4 @@
         </div>
     </div>
     <?php include'../shared/footer.php'; ?>
+

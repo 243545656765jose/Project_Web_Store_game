@@ -1,0 +1,16 @@
+#cart-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #28a745; /* Verde */
+    border-color: #28a745; /* Verde */
+}
+
+#cart-button .fas {
+    color: #fff;
+}
+
+.modal-lg {
+    max-width: 80%;
+}

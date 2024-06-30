@@ -1,0 +1,224 @@
+{
+    "computadoras": [
+        {
+            "id": 1,
+            "title": "Computadora Gamer XYZ",
+            "description": "PC Gaming de alto rendimiento",
+            "precio": 1500,
+            "img": "https://images.pexels.com/photos/4042805/pexels-photo-4042805.jpeg"
+        },
+        {
+            "id": 2,
+            "title": "Computadora Gamer ABC",
+            "description": "PC Gaming con los últimos componentes",
+            "precio": 1200,
+            "img": "https://images.pexels.com/photos/4042806/pexels-photo-4042806.jpeg"
+        },
+        {
+            "id": 3,
+            "title": "Computadora Gamer DEF",
+            "description": "PC Gaming económica",
+            "precio": 800,
+            "img": "https://images.pexels.com/photos/4042807/pexels-photo-4042807.jpeg"
+        },
+        {
+            "id": 4,
+            "title": "Computadora Gamer GHI",
+            "description": "PC Gaming para eSports",
+            "precio": 1300,
+            "img": "https://images.pexels.com/photos/4042808/pexels-photo-4042808.jpeg"
+        },
+        {
+            "id": 5,
+            "title": "Computadora Gamer JKL",
+            "description": "PC Gaming con RGB",
+            "precio": 1100,
+            "img": "https://images.pexels.com/photos/4042809/pexels-photo-4042809.jpeg"
+        }
+    ],
+    "accesorios": [
+        {
+            "id": 6,
+            "title": "Teclado Mecánico XYZ",
+            "description": "Teclado mecánico RGB",
+            "precio": 100,
+            "img": "https://images.pexels.com/photos/4042810/pexels-photo-4042810.jpeg"
+        },
+        {
+            "id": 7,
+            "title": "Ratón Gamer ABC",
+            "description": "Ratón gaming con 16000 DPI",
+            "precio": 50,
+            "img": "https://images.pexels.com/photos/4042811/pexels-photo-4042811.jpeg"
+        },
+        {
+            "id": 8,
+            "title": "Auriculares Gamer DEF",
+            "description": "Auriculares gaming con micrófono",
+            "precio": 80,
+            "img": "https://images.pexels.com/photos/4042812/pexels-photo-4042812.jpeg"
+        },
+        {
+            "id": 9,
+            "title": "Mousepad GHI",
+            "description": "Mousepad gaming de gran tamaño",
+            "precio": 20,
+            "img": "https://images.pexels.com/photos/4042813/pexels-photo-4042813.jpeg"
+        },
+        {
+            "id": 10,
+            "title": "Silla Gamer JKL",
+            "description": "Silla ergonómica para gamers",
+            "precio": 150,
+            "img": "https://images.pexels.com/photos/4042814/pexels-photo-4042814.jpeg"
+        }
+    ],
+    "sillas": [
+        {
+            "id": 11,
+            "title": "Silla Gamer XYZ",
+            "description": "Silla gamer ergonómica con soporte lumbar",
+            "precio": 200,
+            "img": "https://images.pexels.com/photos/4042815/pexels-photo-4042815.jpeg"
+        },
+        {
+            "id": 12,
+            "title": "Silla Gamer ABC",
+            "description": "Silla gamer con cojín de asiento",
+            "precio": 180,
+            "img": "https://images.pexels.com/photos/4042816/pexels-photo-4042816.jpeg"
+        },
+        {
+            "id": 13,
+            "title": "Silla Gamer DEF",
+            "description": "Silla gamer con reposabrazos ajustables",
+            "precio": 170,
+            "img": "https://images.pexels.com/photos/4042817/pexels-photo-4042817.jpeg"
+        },
+        {
+            "id": 14,
+            "title": "Silla Gamer GHI",
+            "description": "Silla gamer con función de reclinación",
+            "precio": 190,
+            "img": "https://images.pexels.com/photos/4042818/pexels-photo-4042818.jpeg"
+        },
+        {
+            "id": 15,
+            "title": "Silla Gamer JKL",
+            "description": "Silla gamer con estructura de metal",
+            "precio": 210,
+            "img": "https://images.pexels.com/photos/4042819/pexels-photo-4042819.jpeg"
+        }
+    ],
+    "mesas": [
+        {
+            "id": 16,
+            "title": "Mesa Gamer XYZ",
+            "description": "Mesa gamer con luz RGB",
+            "precio": 300,
+            "img": "https://images.pexels.com/photos/4042820/pexels-photo-4042820.jpeg"
+        },
+        {
+            "id": 17,
+            "title": "Mesa Gamer ABC",
+            "description": "Mesa gamer ajustable en altura",
+            "precio": 280,
+            "img": "https://images.pexels.com/photos/4042821/pexels-photo-4042821.jpeg"
+        },
+        {
+            "id": 18,
+            "title": "Mesa Gamer DEF",
+            "description": "Mesa gamer con soporte para monitores",
+            "precio": 250,
+            "img": "https://images.pexels.com/photos/4042822/pexels-photo-4042822.jpeg"
+        },
+        {
+            "id": 19,
+            "title": "Mesa Gamer GHI",
+            "description": "Mesa gamer con superficie de fibra de carbono",
+            "precio": 320,
+            "img": "https://images.pexels.com/photos/4042823/pexels-photo-4042823.jpeg"
+        },
+        {
+            "id": 20,
+            "title": "Mesa Gamer JKL",
+            "description": "Mesa gamer con organizador de cables",
+            "precio": 290,
+            "img": "https://images.pexels.com/photos/4042824/pexels-photo-4042824.jpeg"
+        }
+    ],
+    "teclados": [
+        {
+            "id": 21,
+            "title": "Teclado Mecánico XYZ",
+            "description": "Teclado mecánico RGB con switches Cherry MX",
+            "precio": 120,
+            "img": "https://images.pexels.com/photos/4042825/pexels-photo-4042825.jpeg"
+        },
+        {
+            "id": 22,
+            "title": "Teclado Mecánico ABC",
+            "description": "Teclado mecánico con switches Red",
+            "precio": 110,
+            "img": "https://images.pexels.com/photos/4042826/pexels-photo-4042826.jpeg"
+        },
+        {
+            "id": 23,
+            "title": "Teclado Mecánico DEF",
+            "description": "Teclado inalámbrico RGB",
+            "precio": 130,
+            "img": "https://images.pexels.com/photos/4042827/pexels-photo-4042827.jpeg"
+        },
+        {
+            "id": 24,
+            "title": "Teclado Mecánico GHI",
+            "description": "Teclado mecánico con reposamuñecas",
+            "precio": 140,
+            "img": "https://images.pexels.com/photos/4042828/pexels-photo-4042828.jpeg"
+        },
+        {
+            "id": 25,
+            "title": "Teclado Mecánico JKL",
+            "description": "Teclado mecánico compacto",
+            "precio": 100,
+            "img": "https://images.pexels.com/photos/4042829/pexels-photo-4042829.jpeg"
+        }
+    ],
+    "combos": [
+        {
+            "id": 26,
+            "title": "Combo Gamer XYZ",
+            "description": "Combo de teclado y ratón RGB",
+            "precio": 150,
+            "img": "https://images.pexels.com/photos/4042830/pexels-photo-4042830.jpeg"
+        },
+        {
+            "id": 27,
+            "title": "Combo Gamer ABC",
+            "description": "Combo de auriculares y micrófono",
+            "precio": 130,
+            "img": "https://images.pexels.com/photos/4042831/pexels-photo-4042831.jpeg"
+        },
+        {
+            "id": 28,
+            "title": "Combo Gamer DEF",
+            "description": "Combo de teclado mecánico y mousepad",
+            "precio": 140,
+            "img": "https://images.pexels.com/photos/4042832/pexels-photo-4042832.jpeg"
+        },
+        {
+            "id": 29,
+            "title": "Combo Gamer GHI",
+            "description": "Combo de ratón y mousepad",
+            "precio": 120,
+            "img": "https://images.pexels.com/photos/4042833/pexels-photo-4042833.jpeg"
+        },
+        {
+            "id": 30,
+            "title": "Combo Gamer JKL",
+            "description": "Combo de auriculares y ratón",
+            "precio": 160,
+            "img": "https://images.pexels.com/photos/4042834/pexels-photo-4042834.jpeg"
+        }
+    ]
+}
