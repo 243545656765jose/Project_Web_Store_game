@@ -6,8 +6,6 @@ $categoria = isset($_GET['categoria']) ? $_GET['categoria'] : 'computadoras';
 $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : [];
 ?>
 <link rel="stylesheet" href="../public/css/menu.css">
-
-
 <nav class="navbar navbar-expand-lg navbar-custom mt-5 mx-auto" style="max-width: 1140px;">
     <button class="navbar-toggler navbar-toggler-white" type="button" data-toggle="collapse" data-target="#filterNav" aria-controls="filterNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
