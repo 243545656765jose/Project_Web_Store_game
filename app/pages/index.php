@@ -18,7 +18,7 @@
             </div>
             <div class="login-right">
                 <h4 class="text-center text-white">Sign in to the site</h4>
-                <form action="../actions/login_handler.php" method="POST">
+                <form action="../actions/users//login.php" method="POST">
                     <div class="form-group">
                         <label for="username" class="text-white">Username</label>
                         <div class="input-group">
@@ -45,5 +45,5 @@
             </div>
         </div>
     </div>
-    <?php include'../shared/footer.php'; ?>
+    <?php include '../shared/footer.php'; ?>
 
