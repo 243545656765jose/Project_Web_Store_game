@@ -1,18 +1,26 @@
-<?php 
-include '../shared/header.php'; 
+<?php
+include '../shared/header.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/app/models/products.php';
+session_start();
+$user_id = $_SESSION['id'];
+$products = load_products($user_id);
+
 $json_data = file_get_contents('../utils/product.json');
 $productos = json_decode($json_data, true);
+
 $categoria = isset($_GET['categoria']) ? $_GET['categoria'] : 'computadoras';
 $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : [];
 ?>
 <link rel="stylesheet" href="../public/css/menu.css">
 <nav class="navbar navbar-expand-lg navbar-custom mt-5 mx-auto" style="max-width: 1140px;">
-    <button class="navbar-toggler navbar-toggler-white" type="button" data-toggle="collapse" data-target="#filterNav" aria-controls="filterNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-white" type="button" data-toggle="collapse" data-target="#filterNav"
+        aria-controls="filterNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="filterNav">
         <form class="form-inline my-2 my-lg-0 mx-auto">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Search" id="search-input">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Search"
+                id="search-input">
             <button class="btn btn-outline-primary my-2 my-sm-0" type="button" id="search-button">Buscar</button>
         </form>
         <ul class="navbar-nav ml-auto">
@@ -80,48 +88,51 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
                 </button>
             </div>
             <div class="modal-body">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Cantidad</th>
-                            <th>Precio</th>
-                            <th>Total</th>
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody id="cart-items">
-                        <tr data-product-id="1">
-                            <td>Producto 1</td>
-                            <td>
-                                <input type="number" class="form-control form-control-sm text-center quantity" value="1" min="1">
-                            </td>
-                            <td>$100</td>
-                            <td class="item-total">$100</td>
-                            <td>
-                                <button class="btn btn-danger btn-sm remove-item">Eliminar</button>
-                            </td>
-                        </tr>
-                        <tr data-product-id="2">
-                            <td>Producto 2</td>
-                            <td>
-                                <input type="number" class="form-control form-control-sm text-center quantity" value="2" min="1">
-                            </td>
-                            <td>$50</td>
-                            <td class="item-total">$100</td>
-                            <td>
-                                <button class="btn btn-danger btn-sm remove-item">Eliminar</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="text-right">
-                    <h5>Total: $<span id="cart-total">200</span></h5>
+                <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Total</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <?php if ($products): ?>
+                                <?php foreach ($products as $product): ?>
+                                    <tr data-product-id="<?php echo $product['id']; ?>">
+                                        <td><?php echo $product['title']; ?></td>
+                                        <td>
+                                            <input type="number" class="form-control form-control-sm text-center quantity"
+                                                value="1" min="1">
+                                        </td>
+                                        <td>$<?php echo $product['price']; ?></td>
+                                        <td class="item-total">$<?php echo $product['price']; ?></td>
+                                        <td>
+                                            <form action="/app/actions/buy/delete.php" method="POST" style="display:inline;">
+                                                <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
+                                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <tr>
+                                    <td colspan="5" class="text-center">-----------No hay productos-----------</td>
+                                </tr>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <h5>Total: <span id="totalPrice">$0.00</span></h5>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-success">Pagar</button>
+                <button type="button" class="btn btn-primary">Proceder al Pago</button>
             </div>
         </div>
     </div>
