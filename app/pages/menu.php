@@ -50,7 +50,14 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
                         <h5 class="card-title">' . $producto['title'] . '</h5>
                         <p class="card-text">' . $producto['description'] . '</p>
                         <p class="card-text font-weight-bold text-primary">$' . $producto['precio'] . '</p>
-                        <a href="#" class="btn btn-success btn-block">Añadir</a>
+                        <form action="/app/actions/buy/add.php" method="POST">
+                            <input type="hidden" name="product_id" value="' . $producto['id'] . '">
+                            <input type="hidden" name="title" value="' . $producto['title'] . '">
+                            <input type="hidden" name="description" value="' . $producto['description'] . '">
+                            <input type="hidden" name="precio" value="' . $producto['precio'] . '">
+                            <input type="hidden" name="category" value="' . $categoria . '">
+                            <button type="submit" class="btn btn-success btn-block">Añadir</button>
+                        </form>
                     </div>
                 </div>
             </div>';
