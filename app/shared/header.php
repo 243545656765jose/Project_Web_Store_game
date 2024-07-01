@@ -22,6 +22,12 @@
                     <a class="nav-link" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="userPerfil.php">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="userPerfil.php">Historial de Pedidos</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">

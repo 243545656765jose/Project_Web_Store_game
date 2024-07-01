@@ -132,7 +132,7 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Proceder al Pago</button>
+                <a href="/app/pages/procesoCompras.php" class="btn btn-success">Proceder al Pago</a>
             </div>
         </div>
     </div>

@@ -7,8 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username']) && isset($
     if ($result) {
         session_start();
         $_SESSION['id'] = $result['id']; 
-        $_SESSION['username'] = $result['username'];
+        $_SESSION['username'] = $result['username']; 
+        $_SESSION['email'] = $result['email']; 
         header('Location: /app/pages/menu.php');
+        exit;
     } else {
         header('Location: /app/pages/index.php?error=1');
         exit;
@@ -17,3 +19,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username']) && isset($
     header('Location: /app/pages/index.php?error=2');
     exit;
 }
+?>

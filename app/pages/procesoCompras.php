@@ -1,9 +1,14 @@
-<?php include '../shared/header.php'; ?>
+<?php include '../shared/header.php'; 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/app/models/products.php';
+session_start();
+$user_id = $_SESSION['id'];
+$products = load_products($user_id);
+?>
 
 <div class="container mt-5">
     <div class="container-custom">
         <div class="flex justify-content-between align-items-center mb-3">
-        <a href="previous_page.php" class="btn btn-primary">Atrás</a>
+        <a href="menu.php" class="btn btn-primary">Atrás</a>
             <h2 class="text-center">Proceso de Compra</h2>
         </div>
 
@@ -20,19 +25,29 @@
                                 <th>Total</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Producto 1</td>
-                                <td>1</td>
-                                <td>$100</td>
-                                <td>$100</td>
-                            </tr>
-                            <tr>
-                                <td>Producto 2</td>
-                                <td>2</td>
-                                <td>$50</td>
-                                <td>$100</td>
-                            </tr>
+                        <tbody id="cart-items">
+                            <?php if ($products): ?>
+                                <?php foreach ($products as $product): ?>
+                                    <tr data-product-id="<?php echo $product['id']; ?>">
+                                        <td><?php echo $product['title']; ?></td>
+                                        <td>
+                                            <input type="number" class="form-control form-control-sm text-center quantity"
+                                                value="1" min="1">
+                                        </td>
+                                        <td>$<?php echo $product['price']; ?></td>
+                                        <td class="item-total">$<?php echo $product['price']; ?></td>
+                                        <td>
+                                            <form action="/app/actions/buy/delete.php" method="POST" style="display:inline;">
+                                                <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <tr>
+                                    <td colspan="5" class="text-center">-----------No hay productos-----------</td>
+                                </tr>
+                            <?php endif; ?>
                         </tbody>
                     </table>
                     <div class="text-right">
