@@ -49,20 +49,21 @@ $products = load_products($user_id);
                             <th>Producto</th>
                             <th>Total</th>
                             <th>Fecha</th>
+                            <th>PDF</th>
                         </tr>
                     </thead>
                     <tbody id="cart-items">
                         <?php if ($products): ?>
                             <?php foreach ($products as $product): ?>
                                 <tr data-product-id="<?php echo $product['id']; ?>">
+                                    <td><?php echo $product['id']; ?></td>
                                     <td><?php echo $product['title']; ?></td>
-                                    <td>$<?php echo $product['price']; ?></td>
                                     <td class="item-total">$<?php echo $product['price']; ?></td>
                                     <td class="item-date"><?php echo $product['created_at']; ?></td>
                                     <td>
-                                        <form action="/app/actions/buy/delete.php" method="POST" style="display:inline;">
+                                        <form action="" method="POST" style="display:inline;">
                                             <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
-                                            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                            <button type="submit" class="btn btn-danger btn-sm">PDF</button>
                                         </form>
                                     </td>
                                 </tr>

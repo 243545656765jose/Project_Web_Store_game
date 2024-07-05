@@ -1,4 +1,7 @@
 <?php
+
+
+
 function load_products($user_id)
 {
     $conn = require $_SERVER['DOCUMENT_ROOT'].'/app/utils/database.php';
@@ -30,4 +33,3 @@ function delete($id_product) {
         return false;
     }
 }
-
