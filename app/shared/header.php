@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="/app/pages/menu.php">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="userPerfil.php">Perfil</a>

@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <a href="menu.php" class="btn btn-primary">Atrás</a>
             <h2 class="text-center">Proceso de Compra</h2>
         </div>
-        <form action="payment_gateway.php" method="POST">
+        <form action="/app/actions/buy/pay.php" method="POST">
             <div class="row">
                 <div class="col-md-6">
                     <h4>Detalles del Pedido</h4>
@@ -44,6 +44,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                         <td><?php echo $product['quantity']; ?></td>
                                         <td>$<?php echo $product['price']; ?></td>
                                         <td>$<?php echo $product['total']; ?></td>
+                                        <input type="hidden" name="product_id[]" value="<?php echo $product['id']; ?>">
+                                        <input type="hidden" name="title[]" value="<?php echo $product['title']; ?>">
+                                        <input type="hidden" name="quantity[]" value="<?php echo $product['quantity']; ?>">
+                                        <input type="hidden" name="price[]" value="<?php echo $product['price']; ?>">
+                                        <input type="hidden" name="total[]" value="<?php echo $product['total']; ?>">
                                     </tr>
                                 <?php endforeach; ?>
                             <?php else: ?>

@@ -10,3 +10,20 @@ function authenticate_user($username, $password) {
         return null;
     }
 }
+
+
+function getUsername($user_id) {
+    $conn = require_once $_SERVER['DOCUMENT_ROOT'].'/app/utils/database.php';
+    $stmt = $conn->prepare('SELECT username FROM users WHERE id = ?');
+    if ($stmt === false) {
+        die('Prepare failed: ' . htmlspecialchars($conn->error));
+    }
+    $stmt->bind_param('i', $user_id);
+    $stmt->execute();
+    $stmt->bind_result($username);
+    $stmt->fetch();
+    $stmt->close();
+    $conn->close();
+    
+    return $username;
+}

@@ -19,7 +19,8 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
     </button>
     <div class="collapse navbar-collapse" id="filterNav">
         <form class="form-inline my-2 my-lg-0 mx-auto">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Search" id="search-input">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Search"
+                id="search-input">
             <button class="btn btn-outline-primary my-2 my-sm-0" type="button" id="search-button">Buscar</button>
         </form>
         <ul class="navbar-nav ml-auto">
@@ -58,7 +59,8 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
     </div>
 </div>
 
-<button type="button" class="btn btn-warning btn-lg rounded-circle" id="cart-button" data-toggle="modal" data-target="#cartModal">
+<button type="button" class="btn btn-warning btn-lg rounded-circle" id="cart-button" data-toggle="modal"
+    data-target="#cartModal">
     <i class="fas fa-shopping-cart"></i>
 </button>
 <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
@@ -88,17 +90,23 @@ $productos_categoria = isset($productos[$categoria]) ? $productos[$categoria] : 
                                     <?php foreach ($products as $product): ?>
                                         <tr data-product-id="<?= $product['id'] ?>">
                                             <td><?= $product['title'] ?></td>
-                                            <td><input type="number" class="form-control form-control-sm text-center quantity" value="1" min="1" onchange="updateCart(this)"></td>
+                                            <td><input type="number" class="form-control form-control-sm text-center quantity"
+                                                    value="1" min="1" onchange="updateCart(this)"></td>
                                             <td>$<?= $product['price'] ?></td>
-                                            <td class="item-total" data-price="<?= $product['price'] ?>">$<?= $product['price'] ?></td>
+                                            <td class="item-total" data-price="<?= $product['price'] ?>">
+                                                $<?= $product['price'] ?></td>
                                             <td>
-                                                <button type="button" class="btn btn-danger btn-sm remove-item" data-product-id="<?= $product['id'] ?>">Eliminar</button>
+                                                <form action="/app/actions/buy/delete.php" method="POST">
+                                                    <input type="hidden" name="product_id" value="<?= $product['id'] ?>">
+                                                    <button type="submit" class="btn btn-danger btn-sm remove-item">Eliminar</button>
+                                                </form>
                                             </td>
                                             <input type="hidden" name="product_id[]" value="<?= $product['id'] ?>">
                                             <input type="hidden" name="title[]" value="<?= $product['title'] ?>">
                                             <input type="hidden" name="quantity[]" value="1" class="hidden-quantity">
                                             <input type="hidden" name="price[]" value="<?= $product['price'] ?>">
-                                            <input type="hidden" name="total[]" value="<?= $product['price'] ?>" class="hidden-total">
+                                            <input type="hidden" name="total[]" value="<?= $product['price'] ?>"
+                                                class="hidden-total">
                                         </tr>
                                     <?php endforeach; ?>
                                 <?php else: ?>
