@@ -22,9 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $quantity = $quantities[$i];
         $price = $prices[$i];
         $total = $totals[$i];
-
         $success = insert_order_product($user_id, $product_id, $quantity, $price, $order_n);
-
         if (!$success) {
             echo 'Error al insertar el producto en la orden.';
             exit;

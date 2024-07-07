@@ -12,16 +12,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param('ii', $user_id, $product_id);
 
     if ($stmt->execute()) {
-        // Vacia el carrito en la base de datos
         $stmt = $conn->prepare('DELETE FROM order_products WHERE user_id = ?');
         $stmt->bind_param('i', $user_id);
         $stmt->execute();
-
-        // Redirige de nuevo al carrito después de eliminar el producto
         header("Location: /app/pages/menu.php");
         exit();
     } else {
         echo 'Error al eliminar el producto.';
     }
 }
-?>
+
