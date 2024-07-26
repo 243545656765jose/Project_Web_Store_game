@@ -4,14 +4,14 @@
             "id": 1,
             "title": "Computadora Gamer XYZ",
             "description": "PC Gaming de alto rendimiento",
-            "precio": 1500,
+            "precio": 15,
             "img": "/app/public/img/pc1.webp"
         },
         {
             "id": 2,
             "title": "Computadora Gamer ABC",
             "description": "PC Gaming con los últimos componentes",
-            "precio": 1200,
+            "precio": 12,
             "img": "/app/public/img/pc1.webp"
         },
         {
@@ -32,7 +32,7 @@
             "id": 5,
             "title": "Computadora Gamer JKL",
             "description": "PC Gaming con RGB",
-            "precio": 1100,
+            "precio": 1,
             "img": "/app/public/img/pc1.webp"
         },
         {

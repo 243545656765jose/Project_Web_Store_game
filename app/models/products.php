@@ -38,13 +38,16 @@ function insert_order_product($user_id, $product_id, $quantity, $price, $order_n
     return $result;
 }
 
+
 function get_last_order_number() {
     $conn = require $_SERVER['DOCUMENT_ROOT'].'/app/utils/database.php';
     $query = "SELECT MAX(order_number) as order_number FROM order_products";
     $result = mysqli_query($conn, $query);
 
     if ($result) {
-        return mysqli_fetch_assoc($result);
+        $row = mysqli_fetch_assoc($result);
+        $last_order_number = $row['order_number'];
+        return $last_order_number;
     } else {
         return false;
     }

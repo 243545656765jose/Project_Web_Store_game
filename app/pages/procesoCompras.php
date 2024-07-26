@@ -1,6 +1,7 @@
 <?php
-include '../shared/header.php';
 session_start();
+include '../shared/header.php';
+
 $products = [];
 $total = 0;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -65,27 +66,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="col-md-6">
                     <h4>Detalles de Pago</h4>
                     <div class="form-group">
-                        <label for="user_id">Identificación de Usuario</label>
-                        <input type="text" class="form-control" id="user_id" name="user_id" required>
-                    </div>
-                    <div class="form-group">
                         <label for="payment_method">Método de Pago</label>
                         <select class="form-control" id="payment_method" name="payment_method">
-                            <option value="credit_card">Tarjeta de Crédito</option>
                             <option value="paypal">PayPal</option>
                         </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="card_number">Número de Tarjeta</label>
-                        <input type="text" class="form-control" id="card_number" name="card_number" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="expiry_date">Fecha de Expiración</label>
-                        <input type="text" class="form-control" id="expiry_date" name="expiry_date" placeholder="MM/AA" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cvv">CVV</label>
-                        <input type="text" class="form-control" id="cvv" name="cvv" required>
                     </div>
                     <button type="submit" class="btn btn-success btn-block">Pagar</button>
                 </div>
@@ -93,5 +77,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
     </div>
 </div>
-
 <?php include '../shared/footer.php'; ?>
