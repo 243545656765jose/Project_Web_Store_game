@@ -23,6 +23,15 @@
             </div>
             <div class="login-right">
                 <h4 class="text-center">Register to the site</h4>
+                <?php if (isset($_GET['errors'])): ?>
+                    <div class="alert alert-danger">
+                        <ul>
+                            <?php foreach (json_decode($_GET['errors'], true) as $error): ?>
+                                <li><?php echo htmlspecialchars($error); ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endif; ?>
                 <form action="/app/actions/users/add.php" method="POST">
                     <div class="form-group">
                         <label for="reg_username">Username</label>
@@ -30,7 +39,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input type="text" class="form-control" id="username" name="username" >
+                            <input type="text" class="form-control" id="username" name="username">
                         </div>
                     </div>
                     <div class="form-group">
@@ -39,7 +48,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                             </div>
-                            <input type="email" class="form-control" id="email" name="email" >
+                            <input type="email" class="form-control" id="email" name="email">
                         </div>
                     </div>
                     <div class="form-group">
@@ -48,7 +57,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
                             </div>
-                            <input type="password" class="form-control" id="password" name="password" >
+                            <input type="password" class="form-control" id="password" name="password">
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">REGISTER</button>
@@ -57,3 +66,5 @@
         </div>
     </div>
     <?php include '../shared/footer.php'; ?>
+</body>
+</html>

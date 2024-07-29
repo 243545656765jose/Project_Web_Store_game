@@ -12,7 +12,7 @@
             "title": "Computadora Gamer ABC",
             "description": "PC Gaming con los últimos componentes",
             "precio": 12,
-            "img": "/app/public/img/pc1.webp"
+            "img": "/app/public/img/pc4.webp"
         },
         {
             "id": 3,
@@ -61,28 +61,28 @@
             "title": "Computadora Gamer VWX",
             "description": "PC Gaming silenciosa",
             "precio": 1400,
-            "img": "/app/public/img/pc1.webp"
+            "img": "/app/public/img/pc2.png"
         },
         {
             "id": 10,
             "title": "Computadora Gamer YZA",
             "description": "PC Gaming con almacenamiento SSD",
-            "precio": 1600,
-            "img": "/app/public/img/pc1.webp"
+            "precio": 16,
+            "img": "/app/public/img/pc5.png"
         },
         {
             "id": 11,
             "title": "Computadora Gamer BCD",
             "description": "PC Gaming de última generación",
             "precio": 2200,
-            "img": "/app/public/img/pc1.webp"
+            "img": "/app/public/img/pc2.png"
         },
         {
             "id": 12,
             "title": "Computadora Gamer EFG",
             "description": "PC Gaming con soporte VR",
             "precio": 2500,
-            "img": "/app/public/img/pc1.webp"
+            "img": "/app/public/img/pc5.png"
         },
         {
             "id": 13,
@@ -96,7 +96,7 @@
             "title": "Computadora Gamer KLM",
             "description": "PC Gaming con iluminación RGB avanzada",
             "precio": 1300,
-            "img": "/app/public/img/pc1.webp"
+            "img": "/app/public/img/pc4.webp"
         },
         {
             "id": 15,
@@ -109,7 +109,7 @@
             "id": 16,
             "title": "Computadora Gamer QRS",
             "description": "PC Gaming con doble monitor",
-            "precio": 2700,
+            "precio": 27,
             "img": "/app/public/img/pc1.webp"
         },
         {
@@ -137,7 +137,7 @@
             "id": 20,
             "title": "Computadora Gamer CDE",
             "description": "PC Gaming con múltiples puertos USB",
-            "precio": 1200,
+            "precio": 7,
             "img": "/app/public/img/pc1.webp"
         }
         
@@ -147,7 +147,7 @@
             "id": 1,
             "title": "Teclado Mecánico XYZ",
             "description": "Teclado mecánico RGB",
-            "precio": 100,
+            "precio": 5,
             "img": "/app/public/img/ac2.webp"
         },
         {

@@ -1,3 +1,6 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/app/actions/users/validationsesion.php'; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

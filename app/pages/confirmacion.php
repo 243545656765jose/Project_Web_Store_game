@@ -3,7 +3,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/app/models/paypal_config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/app/models/products.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/app/utils/database.php';
-session_start();
 
 if (isset($_GET['success']) && $_GET['success'] == 'true') {
     if (isset($_GET['paymentId']) && isset($_GET['PayerID'])) {

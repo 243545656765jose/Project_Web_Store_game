@@ -1,20 +1,43 @@
 <?php
-session_start();
-$user_id = $_SESSION['id'];
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
+require_once $_SERVER['DOCUMENT_ROOT'] . '/app/public/validation/global.php';
+$conn = require $_SERVER['DOCUMENT_ROOT'] . '/app/utils/database.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $conn = require $_SERVER['DOCUMENT_ROOT'].'/app/utils/database.php';
-    $query = 'UPDATE users SET username=?, email=?, password=? WHERE id=?'; 
-    $stmt = $conn->prepare($query);
-    $stmt->bind_param('sssi', $username, $email, $password, $user_id);
-    $stmt->execute();
 
-    if ($stmt->affected_rows > 0) {
-        header('Location: /app/pages/userPerfil.php');
+
+    $usernameError = validate_username($username);
+    $emailError = validate_email($email);
+    $passwordError = validate_password($password);
+
+    $errors = array_filter([
+        'username' => $usernameError,
+        'email' => $emailError,
+        'password' => $passwordError
+    ]);
+
+    if (!empty($errors)) {
+        $errorsJson = json_encode(array_values($errors));
+        header('Location: /app/pages/registerUser.php?errors=' . urlencode($errorsJson));
         exit;
-    } 
-    $stmt->close();
-    $conn->close();
-} 
+    }
+
+
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+    $username = $conn->real_escape_string($username);
+    $email = $conn->real_escape_string($email);
+    $hashedPassword = $conn->real_escape_string($hashedPassword);
+
+    $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
+    if ($conn->query($sql) === true) {
+        header('Location: /app/pages/index.php');
+        exit;
+    } else {
+        header('Location: /app/pages/registerUser.php');
+        echo "Error: " . $conn->error;
+        exit;
+    }
+}

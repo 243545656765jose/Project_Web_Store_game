@@ -1,7 +1,7 @@
 <?php
 include '../shared/header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/app/models/products.php';
-session_start();
+
 
 if (!isset($_SESSION['id'])) {
     echo "Error: Usuario no autenticado.";
@@ -25,6 +25,15 @@ $orders = get_order_history($user_id);
         <div class="col-md-6">
             <div class="container-custom">
                 <h4>Datos Personales</h4>
+                <?php if (isset($_GET['errors'])): ?>
+                    <div class="alert alert-danger">
+                        <ul>
+                            <?php foreach (json_decode($_GET['errors'], true) as $error): ?>
+                                <li><?php echo htmlspecialchars($error); ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endif; ?>
                 <form action="/app/actions/users/edit.php" method="POST">
                     <div class="form-group">
                         <label for="username">Nombre de Usuario</label>

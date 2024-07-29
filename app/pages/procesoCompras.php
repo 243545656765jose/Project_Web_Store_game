@@ -1,5 +1,4 @@
 <?php
-session_start();
 include '../shared/header.php';
 
 $products = [];

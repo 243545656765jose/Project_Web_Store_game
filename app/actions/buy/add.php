@@ -10,10 +10,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt = $conn->prepare("INSERT INTO products (title, description, price, category, user_id) VALUES (?, ?, ?, ?, ?)");
     $stmt->bind_param('ssdsi', $title, $description, $price, $category, $id);
     if ($stmt->execute()) {
-        header('Location: /app/pages/menu.php');
+        header('Location: /app/pages/menu.php?categoria=' . urlencode($category));
         exit;
     } else {
         exit;
     }
 }
-
+?>

@@ -1,14 +1,27 @@
 <?php
 function authenticate_user($username, $password) {
     $conn = require $_SERVER['DOCUMENT_ROOT'].'/app/utils/database.php';
-    $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+    $username = $conn->real_escape_string($username);
+    $query = "SELECT * FROM users WHERE username = '$username'";
     $result = $conn->query($query);
-    if ($result && $result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-        return $user;
-    } else {
+
+    if (!$result) {
+        echo "Error en la consulta: " . $conn->error;
         return null;
     }
+
+    if ($result && $result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        if (password_verify($password, $user['password'])) {
+            return $user;
+        } else {
+            echo "Contraseña incorrecta";
+        }
+    } else {
+        echo "Usuario no encontrado";
+    }
+
+    return null;
 }
 
 
