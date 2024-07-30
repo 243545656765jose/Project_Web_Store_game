@@ -1,14 +1,40 @@
+
+/* Otros estilos existentes */
+
 .container-custom {
-    background-color: #000000;
     padding: 20px;
-    border-radius: 15px;
-    color: white;
-    margin-bottom: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(146, 142, 142, 0.1);
+    max-height: 500px; /* Ajusta esto según tus necesidades */
+    overflow-y: auto; /* Habilitar scroll vertical */
+    color: #efefef;
 }
 
-.table_dark {
-    color: rgb(10, 10, 10);
-    background-color: #dbdbdb;
-    border: 1px solid black;
-    
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #f2f4f5;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table .table-dark {
+    color: #0f0e0e;
+    background-color: #efefef;
+}
+
+.table .table-dark th, .table .table-dark td, .table .table-dark thead th {
+    border-color: #000000;
+}
+
+.table .table-dark.table-bordered {
+    border: 0;
 }

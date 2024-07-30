@@ -22,4 +22,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username']) && isset($
     header('Location: /app/pages/index.php?error=2');
     exit;
 }
-?>

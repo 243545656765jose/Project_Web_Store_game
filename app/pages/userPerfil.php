@@ -2,7 +2,6 @@
 include '../shared/header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/app/models/products.php';
 
-
 if (!isset($_SESSION['id'])) {
     echo "Error: Usuario no autenticado.";
     exit;
@@ -15,7 +14,7 @@ $products = load_products($user_id);
 $orders = get_order_history($user_id);
 ?>
 
-<link rel="stylesheet" href="../public/css/userPerfil.css">
+<link rel="stylesheet" href="/app/public/css/userPerfil.css">
 
 <div class="container mt-5">
     <div class="flex justify-content-between align-items-center mb-3">
