@@ -1,6 +1,9 @@
 <?php
+
 include '../shared/header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/app/models/products.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/app/actions/users/validationsesion_user.php';
+
 
 $user_id = $_SESSION['id'];
 $products = load_products($user_id);

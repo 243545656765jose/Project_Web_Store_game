@@ -1,5 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/app/actions/users/validationsesion.php'; 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/app/actions/users/validationsesion.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/app/actions/users/validationsesion_user.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
