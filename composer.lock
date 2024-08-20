@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f9e7effd1b3e55ac0c2f764818d701a",
+    "content-hash": "3bef95b4f750d6832aae32fb76812b4e",
     "packages": [
         {
             "name": "paypal/rest-api-sdk-php",
