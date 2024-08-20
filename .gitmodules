@@ -1,0 +1,3 @@
+[submodule "vendor/paypal/rest-api-sdk-php"]
+	path = vendor/paypal/rest-api-sdk-php
+	url = https://github.com/paypal/PayPal-PHP-SDK.git
