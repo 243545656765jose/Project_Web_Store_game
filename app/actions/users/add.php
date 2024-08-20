@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $sql = "INSERT INTO users (username, email, password,rol) VALUES ('$username', '$email', '$hashedPassword','Usuario')";
     if ($conn->query($sql) === true) {
-        header('Location: /app/pages/index.php');
+        header('Location: ../../index.php');
         exit;
     } else {
         echo "Error: " . $conn->error;

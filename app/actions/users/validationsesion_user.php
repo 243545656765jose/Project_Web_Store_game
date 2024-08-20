@@ -6,7 +6,7 @@ if (session_status() == PHP_SESSION_NONE) {
 if (!isset($_SESSION['username'])) {
     $current_page = basename($_SERVER['PHP_SELF']);
     if ($current_page !== 'index.php') {
-        header("Location: /app/pages/index.php");
+        header("Location: ../../index.php");
         exit();
     }
 }

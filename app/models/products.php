@@ -75,7 +75,6 @@ function get_order_history($user_id) {
 }
 function get_all_orders() {
     $conn = require $_SERVER['DOCUMENT_ROOT'].'/app/utils/database.php';
-
     $query = 'SELECT u.username as user_name, op.order_number, MAX(op.order_date) as order_date, SUM(op.price * op.amount) as total 
               FROM order_products op 
               JOIN users u ON op.user_id = u.id 
@@ -84,13 +83,11 @@ function get_all_orders() {
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $result = $stmt->get_result();
-
     $orders = [];
     if ($result && $result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             $orders[] = $row;
         }
     }
-
     return $orders;
 }

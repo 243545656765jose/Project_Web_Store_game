@@ -13,7 +13,7 @@
 <body>
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="position-absolute" style="top: 10px; left: 10px;">
-            <a href="../pages/index.php" class="btn btn-primary">Atrás</a>
+            <a href="../index.php" class="btn btn-primary">Atrás</a>
         </div>
         <div class="login-container">
             <div class="login-left">

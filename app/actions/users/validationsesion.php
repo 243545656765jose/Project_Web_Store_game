@@ -9,7 +9,7 @@ if (isset($_SESSION['LAST_ACTIVITY'])) {
     if ($inactive > SESSION_TIMEOUT) {
         session_unset();    
         session_destroy();  
-        header('Location: /app/pages/index.php?error=session_expired'); 
+        header('Location: ../../index.php?error=session_expired'); 
         exit;
     }
 }

@@ -6,19 +6,19 @@
     <title>Login to AcuRey Gaming</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="stylesheet" href="public/css/login.css">
 </head>
 <body>
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="login-container">
             <div class="login-left">
                 <div class="text-center mb-4">
-                    <img src="../public/img/logoP.webp" alt="AcuRey Gaming Logo" class="img-fluid">
+                    <img src="public/img/logoP.webp" alt="AcuRey Gaming Logo" class="img-fluid">
                 </div>
             </div>
             <div class="login-right">
                 <h4 class="text-center text-white">Sign in to the site</h4>
-                <form action="../actions/users//login.php" method="POST">
+                <form action="actions/users//login.php" method="POST">
                     <div class="form-group">
                         <label for="username" class="text-white">Username</label>
                         <div class="input-group">
@@ -40,10 +40,10 @@
                     <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
                 </form>
                 <div class="text-center mt-3">
-                    <p class="text-white">Don't have an account? <a href="registerUser.php" class="text-primary">Register here</a></p>
+                    <p class="text-white">Don't have an account? <a href="pages/registerUser.php" class="text-primary">Register here</a></p>
                 </div>
             </div>
         </div>
     </div>
-    <?php include '../shared/footer.php'; ?>
+    <?php include 'shared/footer.php'; ?>
 

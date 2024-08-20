@@ -2,7 +2,6 @@
 
 <div class="container mt-5">
     <div class="row">
-        <!-- Cuadro para Reportes -->
         <div class="col-md-6">
             <div class="card text-center shadow-sm">
                 <div class="card-body">
@@ -13,7 +12,6 @@
                 </div>
             </div>
         </div>
-        <!-- Cuadro para Agregar Producto -->
         <div class="col-md-6">
             <div class="card text-center shadow-sm">
                 <div class="card-body">
