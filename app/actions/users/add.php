@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $conn->real_escape_string($email);
     $hashedPassword = $conn->real_escape_string($hashedPassword);
 
-    $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
+    $sql = "INSERT INTO users (username, email, password,rol) VALUES ('$username', '$email', '$hashedPassword','Usuario')";
     if ($conn->query($sql) === true) {
         header('Location: /app/pages/index.php');
         exit;

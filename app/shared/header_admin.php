@@ -24,15 +24,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/app/actions/users/validationsesion_us
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/app/pages/menu.php">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="userPerfil.php">Perfil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="userPerfil.php">Historial de Pedidos</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/app/actions/users/logout.php">Cerrar Sesión</a>
                 </li>
             </ul>

@@ -1,14 +1,15 @@
 <?php
 function authenticate_user($username, $password) {
+    // Conectar a la base de datos
     $conn = require $_SERVER['DOCUMENT_ROOT'].'/app/utils/database.php';
-    $username = $conn->real_escape_string($username);
-    $query = "SELECT * FROM users WHERE username = '$username'";
-    $result = $conn->query($query);
-
-    if (!$result) {
-        echo "Error en la consulta: " . $conn->error;
-        return null;
+    // Preparar la consulta
+    $stmt = $conn->prepare('SELECT * FROM users WHERE username = ?');
+    if ($stmt === false) {
+        die('Prepare failed: ' . htmlspecialchars($conn->error));
     }
+    $stmt->bind_param('s', $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result && $result->num_rows > 0) {
         $user = $result->fetch_assoc();
@@ -20,9 +21,11 @@ function authenticate_user($username, $password) {
     } else {
         echo "Usuario no encontrado";
     }
-
+    $stmt->close();
+    $conn->close();
     return null;
 }
+
 
 
 function getUsername($user_id) {

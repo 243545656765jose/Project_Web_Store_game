@@ -10,14 +10,14 @@
         {
             "id": 2,
             "title": "Computadora Gamer ABC",
-            "description": "PC Gaming con los últimos componentes",
+            "description": "PC Gaming con los \u00faltimos componentes",
             "precio": 12,
             "img": "/app/public/img/pc4.webp"
         },
         {
             "id": 3,
             "title": "Computadora Gamer DEF",
-            "description": "PC Gaming económica",
+            "description": "PC Gaming econ\u00f3mica",
             "precio": 800,
             "img": "/app/public/img/pc1.webp"
         },
@@ -38,7 +38,7 @@
         {
             "id": 6,
             "title": "Computadora Gamer MNO",
-            "description": "PC Gaming con refrigeración líquida",
+            "description": "PC Gaming con refrigeraci\u00f3n l\u00edquida",
             "precio": 1700,
             "img": "/app/public/img/pc1.webp"
         },
@@ -52,7 +52,7 @@
         {
             "id": 8,
             "title": "Computadora Gamer STU",
-            "description": "PC Gaming con tarjeta gráfica avanzada",
+            "description": "PC Gaming con tarjeta gr\u00e1fica avanzada",
             "precio": 2000,
             "img": "/app/public/img/pc1.webp"
         },
@@ -73,7 +73,7 @@
         {
             "id": 11,
             "title": "Computadora Gamer BCD",
-            "description": "PC Gaming de última generación",
+            "description": "PC Gaming de \u00faltima generaci\u00f3n",
             "precio": 2200,
             "img": "/app/public/img/pc2.png"
         },
@@ -94,14 +94,14 @@
         {
             "id": 14,
             "title": "Computadora Gamer KLM",
-            "description": "PC Gaming con iluminación RGB avanzada",
+            "description": "PC Gaming con iluminaci\u00f3n RGB avanzada",
             "precio": 1300,
             "img": "/app/public/img/pc4.webp"
         },
         {
             "id": 15,
             "title": "Computadora Gamer NOP",
-            "description": "PC Gaming portátil",
+            "description": "PC Gaming port\u00e1til",
             "precio": 1800,
             "img": "/app/public/img/pc1.webp"
         },
@@ -115,7 +115,7 @@
         {
             "id": 17,
             "title": "Computadora Gamer TUV",
-            "description": "PC Gaming con teclado mecánico",
+            "description": "PC Gaming con teclado mec\u00e1nico",
             "precio": 1500,
             "img": "/app/public/img/pc1.webp"
         },
@@ -129,73 +129,72 @@
         {
             "id": 19,
             "title": "Computadora Gamer ZAB",
-            "description": "PC Gaming económica",
+            "description": "PC Gaming econ\u00f3mica",
             "precio": 800,
             "img": "/app/public/img/pc1.webp"
         },
         {
             "id": 20,
             "title": "Computadora Gamer CDE",
-            "description": "PC Gaming con múltiples puertos USB",
+            "description": "PC Gaming con m\u00faltiples puertos USB",
             "precio": 7,
             "img": "/app/public/img/pc1.webp"
         }
-        
     ],
     "accesorios": [
         {
             "id": 1,
-            "title": "Teclado Mecánico XYZ",
-            "description": "Teclado mecánico RGB",
+            "title": "Teclado Mec\u00e1nico XYZ",
+            "description": "Teclado mec\u00e1nico RGB",
             "precio": 5,
             "img": "/app/public/img/ac2.webp"
         },
         {
             "id": 2,
-            "title": "Ratón Gamer ABC",
-            "description": "Ratón gaming con 16000 DPI",
+            "title": "Rat\u00f3n Gamer ABC",
+            "description": "Rat\u00f3n gaming con 16000 DPI",
             "precio": 50,
             "img": "/app/public/img/ac2.webp"
         },
         {
             "id": 3,
             "title": "Auriculares Gamer DEF",
-            "description": "Auriculares gaming con micrófono",
+            "description": "Auriculares gaming con micr\u00f3fono",
             "precio": 80,
             "img": "/app/public/img/ac3.webp"
         },
         {
             "id": 4,
             "title": "Mousepad GHI",
-            "description": "Mousepad gaming de gran tamaño",
+            "description": "Mousepad gaming de gran tama\u00f1o",
             "precio": 20,
             "img": "/app/public/img/ac1.jpeg"
         },
         {
             "id": 5,
             "title": "Silla Gamer JKL",
-            "description": "Silla ergonómica para gamers",
+            "description": "Silla ergon\u00f3mica para gamers",
             "precio": 150,
             "img": "/app/public/img/ac2.webp"
         },
         {
             "id": 6,
-            "title": "Teclado Mecánico MNO",
-            "description": "Teclado mecánico con switches Cherry MX",
+            "title": "Teclado Mec\u00e1nico MNO",
+            "description": "Teclado mec\u00e1nico con switches Cherry MX",
             "precio": 120,
             "img": "/app/public/img/ac2.webp"
         },
         {
             "id": 7,
-            "title": "Ratón Gamer PQR",
-            "description": "Ratón gaming con iluminación RGB",
+            "title": "Rat\u00f3n Gamer PQR",
+            "description": "Rat\u00f3n gaming con iluminaci\u00f3n RGB",
             "precio": 60,
             "img": "/app/public/img/ac2.webp"
         },
         {
             "id": 8,
             "title": "Auriculares Gamer STU",
-            "description": "Auriculares gaming inalámbricos",
+            "description": "Auriculares gaming inal\u00e1mbricos",
             "precio": 100,
             "img": "/app/public/img/ac2.webp"
         },
@@ -215,22 +214,22 @@
         },
         {
             "id": 11,
-            "title": "Teclado Mecánico BCD",
-            "description": "Teclado mecánico con teclas programables",
+            "title": "Teclado Mec\u00e1nico BCD",
+            "description": "Teclado mec\u00e1nico con teclas programables",
             "precio": 110,
             "img": "/app/public/img/ac2.webp"
         },
         {
             "id": 12,
-            "title": "Ratón Gamer EFG",
-            "description": "Ratón gaming con diseño ergonómico",
+            "title": "Rat\u00f3n Gamer EFG",
+            "description": "Rat\u00f3n gaming con dise\u00f1o ergon\u00f3mico",
             "precio": 55,
             "img": "/app/public/img/ac2.webp"
         },
         {
             "id": 13,
             "title": "Auriculares Gamer HIJ",
-            "description": "Auriculares gaming con cancelación de ruido",
+            "description": "Auriculares gaming con cancelaci\u00f3n de ruido",
             "precio": 120,
             "img": "/app/public/img/ac2.webp"
         },
@@ -250,15 +249,15 @@
         },
         {
             "id": 16,
-            "title": "Teclado Mecánico QRS",
-            "description": "Teclado mecánico inalámbrico",
+            "title": "Teclado Mec\u00e1nico QRS",
+            "description": "Teclado mec\u00e1nico inal\u00e1mbrico",
             "precio": 130,
             "img": "/app/public/img/ac2.webp"
         },
         {
             "id": 17,
-            "title": "Ratón Gamer TUV",
-            "description": "Ratón gaming con ajuste de peso",
+            "title": "Rat\u00f3n Gamer TUV",
+            "description": "Rat\u00f3n gaming con ajuste de peso",
             "precio": 70,
             "img": "/app/public/img/ac2.webp"
         },
@@ -282,365 +281,378 @@
             "description": "Silla gaming con tapizado de cuero",
             "precio": 200,
             "img": "/app/public/img/ac2.webp"
+        },
+        {
+            "id": 21,
+            "title": "s",
+            "description": "dfs",
+            "precio": "22",
+            "img": "/app/public/img/66c4c2be3c484.png"
         }
     ],
-        "sillas": [
-            {
-                "id": 1,
-                "title": "Silla Gamer XYZ",
-                "description": "Silla gamer ergonómica con soporte lumbar",
-                "precio": 200,
-                "img": "/app/public/img/si1.jpg"
-            },
-            {
-                "id": 2,
-                "title": "Silla Gamer ABC",
-                "description": "Silla gamer con cojín de asiento",
-                "precio": 180,
-                "img": "/app/public/img/si2.jpg.webp"
-            },
-            {
-                "id": 3,
-                "title": "Silla Gamer DEF",
-                "description": "Silla gamer con reposabrazos ajustables",
-                "precio": 170,
-                "img": "/app/public/img/si3.webp"
-            },
-            {
-                "id": 4,
-                "title": "Silla Gamer GHI",
-                "description": "Silla gamer con función de reclinación",
-                "precio": 190,
-                "img": "/app/public/img/si4.jpg"
-            },
-            {
-                "id": 5,
-                "title": "Silla Gamer JKL",
-                "description": "Silla gamer con estructura de metal",
-                "precio": 210,
-                "img": "/app/public/img/si1.jpg"
-            },
-            {
-                "id": 6,
-                "title": "Silla Gamer MNO",
-                "description": "Silla gamer con soporte para la cabeza",
-                "precio": 230,
-                "img": "/app/public/img/si4.jpg"
-            },
-            {
-                "id": 7,
-                "title": "Silla Gamer PQR",
-                "description": "Silla gamer con asiento de cuero",
-                "precio": 250,
-                "img": "/app/public/img/si2.jpg.webp"
-            },
-            {
-                "id": 8,
-                "title": "Silla Gamer STU",
-                "description": "Silla gamer con base de aluminio",
-                "precio": 270,
-                "img": "/app/public/img/si3.webp"
-            },
-            {
-                "id": 9,
-                "title": "Silla Gamer VWX",
-                "description": "Silla gamer con sistema de masaje",
-                "precio": 300,
-                "img": "/app/public/img/si2.jpg.webp"
-            },
-            {
-                "id": 10,
-                "title": "Silla Gamer YZA",
-                "description": "Silla gamer con diseño ergonómico avanzado",
-                "precio": 320,
-                "img": "/app/public/img/si3.webp"
-            },
-            {
-                "id": 11,
-                "title": "Silla Gamer BCD",
-                "description": "Silla gamer con reposapiés",
-                "precio": 240,
-                "img": "/app/public/img/si2.jpg.webp"
-            },
-            {
-                "id": 12,
-                "title": "Silla Gamer EFG",
-                "description": "Silla gamer con ajuste de altura",
-                "precio": 220,
-                "img": "/app/public/img/si3.webp"
-            },
-            {
-                "id": 13,
-                "title": "Silla Gamer HIJ",
-                "description": "Silla gamer con ruedas silenciosas",
-                "precio": 260,
-                "img": "/app/public/img/si2.jpg.webp"
-            },
-            {
-                "id": 14,
-                "title": "Silla Gamer KLM",
-                "description": "Silla gamer con almohadilla para la cabeza",
-                "precio": 280,
-                "img": "/app/public/img/si3.webp"
-            },
-            {
-                "id": 15,
-                "title": "Silla Gamer NOP",
-                "description": "Silla gamer con sistema de inclinación",
-                "precio": 290,
-                "img": "/app/public/img/si3.webp"
-            },
-            {
-                "id": 16,
-                "title": "Silla Gamer QRS",
-                "description": "Silla gamer con soporte lumbar ajustable",
-                "precio": 310,
-                "img": "/app/public/img/si4.jpg"
-            },
-            {
-                "id": 17,
-                "title": "Silla Gamer TUV",
-                "description": "Silla gamer con materiales transpirables",
-                "precio": 250,
-                "img": "/app/public/img/si1.jpg"
-            },
-            {
-                "id": 18,
-                "title": "Silla Gamer WXY",
-                "description": "Silla gamer con ajuste de inclinación",
-                "precio": 270,
-                "img": "/app/public/img/si1.jpg"
-            },
-            {
-                "id": 19,
-                "title": "Silla Gamer ZAB",
-                "description": "Silla gamer con base de acero",
-                "precio": 230,
-                "img": "/app/public/img/si4.jpg"
-            },
-            {
-                "id": 20,
-                "title": "Silla Gamer CDE",
-                "description": "Silla gamer con tapizado de alta calidad",
-                "precio": 300,
-                "img": "/app/public/img/si1.jpg"
-            }
-            
-        ],
-            "mesas": [
-                {
-                    "id": 1,
-                    "title": "Mesa Gamer XYZ",
-                    "description": "Mesa gamer con luz RGB",
-                    "precio": 300,
-                    "img": "/app/public/img/me4.png"
-                },
-                {
-                    "id": 2,
-                    "title": "Mesa Gamer ABC",
-                    "description": "Mesa gamer ajustable en altura",
-                    "precio": 280,
-                    "img": "/app/public/img/me3.jpg"
-                },
-                {
-                    "id": 3,
-                    "title": "Mesa Gamer DEF",
-                    "description": "Mesa gamer con soporte para monitores",
-                    "precio": 250,
-                    "img": "/app/public/img/me1.jpg"
-                },
-                {
-                    "id": 4,
-                    "title": "Mesa Gamer GHI",
-                    "description": "Mesa gamer con superficie de fibra de carbono",
-                    "precio": 320,
-                    "img": "/app/public/img/me3.jpg"
-                },
-                {
-                    "id": 5,
-                    "title": "Mesa Gamer JKL",
-                    "description": "Mesa gamer con organizador de cables",
-                    "precio": 290,
-                    "img": "/app/public/img/me1.jpg"
-                },
-                {
-                    "id": 6,
-                    "title": "Mesa Gamer MNO",
-                    "description": "Mesa gamer con soporte para PC",
-                    "precio": 310,
-                    "img": "/app/public/img/me3.jpg"
-                },
-                {
-                    "id": 7,
-                    "title": "Mesa Gamer PQR",
-                    "description": "Mesa gamer con diseño ergonómico",
-                    "precio": 330,
-                    "img": "/app/public/img/me1.jpg"
-                },
-                {
-                    "id": 8,
-                    "title": "Mesa Gamer STU",
-                    "description": "Mesa gamer con compartimentos",
-                    "precio": 350,
-                    "img": "/app/public/img/me3.jpg"
-                },
-                {
-                    "id": 9,
-                    "title": "Mesa Gamer VWX",
-                    "description": "Mesa gamer con materiales de alta calidad",
-                    "precio": 370,
-                    "img": "/app/public/img/me1.jpg"
-                },
-                {
-                    "id": 10,
-                    "title": "Mesa Gamer YZA",
-                    "description": "Mesa gamer con almacenamiento adicional",
-                    "precio": 390,
-                    "img": "/app/public/img/me5.png"
-                }
-            ],
-                "teclados": [
-                    {
-                        "id": 1,
-                        "title": "Teclado Mecánico XYZ",
-                        "description": "Teclado mecánico RGB con switches Cherry MX",
-                        "precio": 120,
-                        "img": "/app/public/img/t3.jpg.webp"
-                    },
-                    {
-                        "id": 2,
-                        "title": "Teclado Mecánico ABC",
-                        "description": "Teclado mecánico con switches Red",
-                        "precio": 110,
-                        "img": "/app/public/img/t4.jpg"
-                    },
-                    {
-                        "id": 3,
-                        "title": "Teclado Mecánico DEF",
-                        "description": "Teclado inalámbrico RGB",
-                        "precio": 130,
-                        "img": "/app/public/img/t1.jpeg"
-                    },
-                    {
-                        "id": 4,
-                        "title": "Teclado Mecánico GHI",
-                        "description": "Teclado mecánico con reposamuñecas",
-                        "precio": 140,
-                        "img": "/app/public/img/t5.webp"
-                    },
-                    {
-                        "id": 5,
-                        "title": "Teclado Mecánico JKL",
-                        "description": "Teclado mecánico compacto",
-                        "precio": 100,
-                        "img": "/app/public/img/t3.jpg.webp"
-                    },
-                    {
-                        "id": 6,
-                        "title": "Teclado Mecánico MNO",
-                        "description": "Teclado mecánico con retroiluminación ajustable",
-                        "precio": 150,
-                        "img": "/app/public/img/t4.jpg"
-                    },
-                    {
-                        "id": 7,
-                        "title": "Teclado Mecánico PQR",
-                        "description": "Teclado mecánico con teclas multimedia",
-                        "precio": 160,
-                        "img": "/app/public/img/t1.jpeg"
-                    },
-                    {
-                        "id": 8,
-                        "title": "Teclado Mecánico STU",
-                        "description": "Teclado mecánico con cable desmontable",
-                        "precio": 135,
-                        "img": "/app/public/img/t5.webp"
-                    },
-                    {
-                        "id": 9,
-                        "title": "Teclado Mecánico VWX",
-                        "description": "Teclado mecánico con interruptores silenciosos",
-                        "precio": 145,
-                        "img": "/app/public/img/t4.jpg"
-                    },
-                    {
-                        "id": 10,
-                        "title": "Teclado Mecánico YZA",
-                        "description": "Teclado mecánico con diseño ergonómico",
-                        "precio": 155,
-                        "img": "/app/public/img/t5.webp"
-                    }
-                ],
-                    "combos": [
-                        {
-                            "id": 1,
-                            "title": "Combo Gamer XYZ",
-                            "description": "Combo de teclado y ratón RGB",
-                            "precio": 150,
-                            "img": "/app/public/img/c5.webp"
-                        },
-                        {
-                            "id": 2,
-                            "title": "Combo Gamer ABC",
-                            "description": "Combo de auriculares y micrófono",
-                            "precio": 130,
-                            "img": "/app/public/img/c2.jpg"
-                        },
-                        {
-                            "id": 3,
-                            "title": "Combo Gamer DEF",
-                            "description": "Combo de teclado mecánico y mousepad",
-                            "precio": 140,
-                            "img": "/app/public/img/c7.jpeg"
-                        },
-                        {
-                            "id": 4,
-                            "title": "Combo Gamer GHI",
-                            "description": "Combo de ratón y mousepad",
-                            "precio": 120,
-                            "img": "/app/public/img/c1.jpg"
-                        },
-                        {
-                            "id": 5,
-                            "title": "Combo Gamer JKL",
-                            "description": "Combo de auriculares y ratón",
-                            "precio": 160,
-                            "img": "/app/public/img/c7.jpeg"
-                        },
-                        {
-                            "id": 6,
-                            "title": "Combo Gamer MNO",
-                            "description": "Combo de teclado, ratón y auriculares",
-                            "precio": 180,
-                            "img": "/app/public/img/c6.png"
-                        },
-                        {
-                            "id": 7,
-                            "title": "Combo Gamer PQR",
-                            "description": "Combo de teclado mecánico y ratón inalámbrico",
-                            "precio": 170,
-                            "img": "/app/public/img/c5.webp"
-                        },
-                        {
-                            "id": 8,
-                            "title": "Combo Gamer STU",
-                            "description": "Combo de teclado RGB y auriculares con micrófono",
-                            "precio": 190,
-                            "img": "/app/public/img/c4.jpg"
-                        },
-                        {
-                            "id": 9,
-                            "title": "Combo Gamer VWX",
-                            "description": "Combo de teclado y mouse inalámbricos",
-                            "precio": 160,
-                            "img": "/app/public/img/c2.jpg"
-                        },
-                        {
-                            "id": 10,
-                            "title": "Combo Gamer YZA",
-                            "description": "Combo de auriculares y teclado mecánico",
-                            "precio": 180,
-                            "img": "/app/public/img/c1.jpg"
-                        }
-                    ] 
+    "sillas": [
+        {
+            "id": 1,
+            "title": "Silla Gamer XYZ",
+            "description": "Silla gamer ergon\u00f3mica con soporte lumbar",
+            "precio": 200,
+            "img": "/app/public/img/si1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Silla Gamer ABC",
+            "description": "Silla gamer con coj\u00edn de asiento",
+            "precio": 180,
+            "img": "/app/public/img/si2.jpg.webp"
+        },
+        {
+            "id": 3,
+            "title": "Silla Gamer DEF",
+            "description": "Silla gamer con reposabrazos ajustables",
+            "precio": 170,
+            "img": "/app/public/img/si3.webp"
+        },
+        {
+            "id": 4,
+            "title": "Silla Gamer GHI",
+            "description": "Silla gamer con funci\u00f3n de reclinaci\u00f3n",
+            "precio": 190,
+            "img": "/app/public/img/si4.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Silla Gamer JKL",
+            "description": "Silla gamer con estructura de metal",
+            "precio": 210,
+            "img": "/app/public/img/si1.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Silla Gamer MNO",
+            "description": "Silla gamer con soporte para la cabeza",
+            "precio": 230,
+            "img": "/app/public/img/si4.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Silla Gamer PQR",
+            "description": "Silla gamer con asiento de cuero",
+            "precio": 250,
+            "img": "/app/public/img/si2.jpg.webp"
+        },
+        {
+            "id": 8,
+            "title": "Silla Gamer STU",
+            "description": "Silla gamer con base de aluminio",
+            "precio": 270,
+            "img": "/app/public/img/si3.webp"
+        },
+        {
+            "id": 9,
+            "title": "Silla Gamer VWX",
+            "description": "Silla gamer con sistema de masaje",
+            "precio": 300,
+            "img": "/app/public/img/si2.jpg.webp"
+        },
+        {
+            "id": 10,
+            "title": "Silla Gamer YZA",
+            "description": "Silla gamer con dise\u00f1o ergon\u00f3mico avanzado",
+            "precio": 320,
+            "img": "/app/public/img/si3.webp"
+        },
+        {
+            "id": 11,
+            "title": "Silla Gamer BCD",
+            "description": "Silla gamer con reposapi\u00e9s",
+            "precio": 240,
+            "img": "/app/public/img/si2.jpg.webp"
+        },
+        {
+            "id": 12,
+            "title": "Silla Gamer EFG",
+            "description": "Silla gamer con ajuste de altura",
+            "precio": 220,
+            "img": "/app/public/img/si3.webp"
+        },
+        {
+            "id": 13,
+            "title": "Silla Gamer HIJ",
+            "description": "Silla gamer con ruedas silenciosas",
+            "precio": 260,
+            "img": "/app/public/img/si2.jpg.webp"
+        },
+        {
+            "id": 14,
+            "title": "Silla Gamer KLM",
+            "description": "Silla gamer con almohadilla para la cabeza",
+            "precio": 280,
+            "img": "/app/public/img/si3.webp"
+        },
+        {
+            "id": 15,
+            "title": "Silla Gamer NOP",
+            "description": "Silla gamer con sistema de inclinaci\u00f3n",
+            "precio": 290,
+            "img": "/app/public/img/si3.webp"
+        },
+        {
+            "id": 16,
+            "title": "Silla Gamer QRS",
+            "description": "Silla gamer con soporte lumbar ajustable",
+            "precio": 310,
+            "img": "/app/public/img/si4.jpg"
+        },
+        {
+            "id": 17,
+            "title": "Silla Gamer TUV",
+            "description": "Silla gamer con materiales transpirables",
+            "precio": 250,
+            "img": "/app/public/img/si1.jpg"
+        },
+        {
+            "id": 18,
+            "title": "Silla Gamer WXY",
+            "description": "Silla gamer con ajuste de inclinaci\u00f3n",
+            "precio": 270,
+            "img": "/app/public/img/si1.jpg"
+        },
+        {
+            "id": 19,
+            "title": "Silla Gamer ZAB",
+            "description": "Silla gamer con base de acero",
+            "precio": 230,
+            "img": "/app/public/img/si4.jpg"
+        },
+        {
+            "id": 20,
+            "title": "Silla Gamer CDE",
+            "description": "Silla gamer con tapizado de alta calidad",
+            "precio": 300,
+            "img": "/app/public/img/si1.jpg"
+        },
+        {
+            "id": 21,
+            "title": "silla12",
+            "description": "Mejor silla 20024",
+            "precio": "1",
+            "img": "/app/public/img/66c4d0f1c47cd.png"
+        }
+    ],
+    "mesas": [
+        {
+            "id": 1,
+            "title": "Mesa Gamer XYZ",
+            "description": "Mesa gamer con luz RGB",
+            "precio": 300,
+            "img": "/app/public/img/me4.png"
+        },
+        {
+            "id": 2,
+            "title": "Mesa Gamer ABC",
+            "description": "Mesa gamer ajustable en altura",
+            "precio": 280,
+            "img": "/app/public/img/me3.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Mesa Gamer DEF",
+            "description": "Mesa gamer con soporte para monitores",
+            "precio": 250,
+            "img": "/app/public/img/me1.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Mesa Gamer GHI",
+            "description": "Mesa gamer con superficie de fibra de carbono",
+            "precio": 320,
+            "img": "/app/public/img/me3.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Mesa Gamer JKL",
+            "description": "Mesa gamer con organizador de cables",
+            "precio": 290,
+            "img": "/app/public/img/me1.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Mesa Gamer MNO",
+            "description": "Mesa gamer con soporte para PC",
+            "precio": 310,
+            "img": "/app/public/img/me3.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Mesa Gamer PQR",
+            "description": "Mesa gamer con dise\u00f1o ergon\u00f3mico",
+            "precio": 330,
+            "img": "/app/public/img/me1.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Mesa Gamer STU",
+            "description": "Mesa gamer con compartimentos",
+            "precio": 350,
+            "img": "/app/public/img/me3.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Mesa Gamer VWX",
+            "description": "Mesa gamer con materiales de alta calidad",
+            "precio": 370,
+            "img": "/app/public/img/me1.jpg"
+        },
+        {
+            "id": 10,
+            "title": "Mesa Gamer YZA",
+            "description": "Mesa gamer con almacenamiento adicional",
+            "precio": 390,
+            "img": "/app/public/img/me5.png"
+        }
+    ],
+    "teclados": [
+        {
+            "id": 1,
+            "title": "Teclado Mec\u00e1nico XYZ",
+            "description": "Teclado mec\u00e1nico RGB con switches Cherry MX",
+            "precio": 120,
+            "img": "/app/public/img/t3.jpg.webp"
+        },
+        {
+            "id": 2,
+            "title": "Teclado Mec\u00e1nico ABC",
+            "description": "Teclado mec\u00e1nico con switches Red",
+            "precio": 110,
+            "img": "/app/public/img/t4.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Teclado Mec\u00e1nico DEF",
+            "description": "Teclado inal\u00e1mbrico RGB",
+            "precio": 130,
+            "img": "/app/public/img/t1.jpeg"
+        },
+        {
+            "id": 4,
+            "title": "Teclado Mec\u00e1nico GHI",
+            "description": "Teclado mec\u00e1nico con reposamu\u00f1ecas",
+            "precio": 140,
+            "img": "/app/public/img/t5.webp"
+        },
+        {
+            "id": 5,
+            "title": "Teclado Mec\u00e1nico JKL",
+            "description": "Teclado mec\u00e1nico compacto",
+            "precio": 100,
+            "img": "/app/public/img/t3.jpg.webp"
+        },
+        {
+            "id": 6,
+            "title": "Teclado Mec\u00e1nico MNO",
+            "description": "Teclado mec\u00e1nico con retroiluminaci\u00f3n ajustable",
+            "precio": 150,
+            "img": "/app/public/img/t4.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Teclado Mec\u00e1nico PQR",
+            "description": "Teclado mec\u00e1nico con teclas multimedia",
+            "precio": 160,
+            "img": "/app/public/img/t1.jpeg"
+        },
+        {
+            "id": 8,
+            "title": "Teclado Mec\u00e1nico STU",
+            "description": "Teclado mec\u00e1nico con cable desmontable",
+            "precio": 135,
+            "img": "/app/public/img/t5.webp"
+        },
+        {
+            "id": 9,
+            "title": "Teclado Mec\u00e1nico VWX",
+            "description": "Teclado mec\u00e1nico con interruptores silenciosos",
+            "precio": 145,
+            "img": "/app/public/img/t4.jpg"
+        },
+        {
+            "id": 10,
+            "title": "Teclado Mec\u00e1nico YZA",
+            "description": "Teclado mec\u00e1nico con dise\u00f1o ergon\u00f3mico",
+            "precio": 155,
+            "img": "/app/public/img/t5.webp"
+        }
+    ],
+    "combos": [
+        {
+            "id": 1,
+            "title": "Combo Gamer XYZ",
+            "description": "Combo de teclado y rat\u00f3n RGB",
+            "precio": 150,
+            "img": "/app/public/img/c5.webp"
+        },
+        {
+            "id": 2,
+            "title": "Combo Gamer ABC",
+            "description": "Combo de auriculares y micr\u00f3fono",
+            "precio": 130,
+            "img": "/app/public/img/c2.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Combo Gamer DEF",
+            "description": "Combo de teclado mec\u00e1nico y mousepad",
+            "precio": 140,
+            "img": "/app/public/img/c7.jpeg"
+        },
+        {
+            "id": 4,
+            "title": "Combo Gamer GHI",
+            "description": "Combo de rat\u00f3n y mousepad",
+            "precio": 120,
+            "img": "/app/public/img/c1.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Combo Gamer JKL",
+            "description": "Combo de auriculares y rat\u00f3n",
+            "precio": 160,
+            "img": "/app/public/img/c7.jpeg"
+        },
+        {
+            "id": 6,
+            "title": "Combo Gamer MNO",
+            "description": "Combo de teclado, rat\u00f3n y auriculares",
+            "precio": 180,
+            "img": "/app/public/img/c6.png"
+        },
+        {
+            "id": 7,
+            "title": "Combo Gamer PQR",
+            "description": "Combo de teclado mec\u00e1nico y rat\u00f3n inal\u00e1mbrico",
+            "precio": 170,
+            "img": "/app/public/img/c5.webp"
+        },
+        {
+            "id": 8,
+            "title": "Combo Gamer STU",
+            "description": "Combo de teclado RGB y auriculares con micr\u00f3fono",
+            "precio": 190,
+            "img": "/app/public/img/c4.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Combo Gamer VWX",
+            "description": "Combo de teclado y mouse inal\u00e1mbricos",
+            "precio": 160,
+            "img": "/app/public/img/c2.jpg"
+        },
+        {
+            "id": 10,
+            "title": "Combo Gamer YZA",
+            "description": "Combo de auriculares y teclado mec\u00e1nico",
+            "precio": 180,
+            "img": "/app/public/img/c1.jpg"
+        }
+    ]
 }
