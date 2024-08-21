@@ -19,42 +19,7 @@
             "title": "Computadora Gamer DEF",
             "description": "PC Gaming econ\u00f3mica",
             "precio": 800,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 4,
-            "title": "Computadora Gamer GHI",
-            "description": "PC Gaming para eSports",
-            "precio": 1300,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 5,
-            "title": "Computadora Gamer JKL",
-            "description": "PC Gaming con RGB",
-            "precio": 1,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 6,
-            "title": "Computadora Gamer MNO",
-            "description": "PC Gaming con refrigeraci\u00f3n l\u00edquida",
-            "precio": 1700,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 7,
-            "title": "Computadora Gamer PQR",
-            "description": "PC Gaming compacta",
-            "precio": 900,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 8,
-            "title": "Computadora Gamer STU",
-            "description": "PC Gaming con tarjeta gr\u00e1fica avanzada",
-            "precio": 2000,
-            "img": "/app/public/img/pc1.webp"
+            "img": "/app/public/img/pc6.jpeg"
         },
         {
             "id": 9,
@@ -68,7 +33,7 @@
             "title": "Computadora Gamer YZA",
             "description": "PC Gaming con almacenamiento SSD",
             "precio": 16,
-            "img": "/app/public/img/pc5.png"
+            "img": "/app/public/img/pc8.jpg"
         },
         {
             "id": 11,
@@ -89,7 +54,7 @@
             "title": "Computadora Gamer HIJ",
             "description": "PC Gaming con monitor ultra ancho",
             "precio": 3000,
-            "img": "/app/public/img/pc1.webp"
+            "img": "/app/public/img/pc7.jpeg"
         },
         {
             "id": 14,
@@ -97,48 +62,6 @@
             "description": "PC Gaming con iluminaci\u00f3n RGB avanzada",
             "precio": 1300,
             "img": "/app/public/img/pc4.webp"
-        },
-        {
-            "id": 15,
-            "title": "Computadora Gamer NOP",
-            "description": "PC Gaming port\u00e1til",
-            "precio": 1800,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 16,
-            "title": "Computadora Gamer QRS",
-            "description": "PC Gaming con doble monitor",
-            "precio": 27,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 17,
-            "title": "Computadora Gamer TUV",
-            "description": "PC Gaming con teclado mec\u00e1nico",
-            "precio": 1500,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 18,
-            "title": "Computadora Gamer WXY",
-            "description": "PC Gaming para streaming",
-            "precio": 2000,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 19,
-            "title": "Computadora Gamer ZAB",
-            "description": "PC Gaming econ\u00f3mica",
-            "precio": 800,
-            "img": "/app/public/img/pc1.webp"
-        },
-        {
-            "id": 20,
-            "title": "Computadora Gamer CDE",
-            "description": "PC Gaming con m\u00faltiples puertos USB",
-            "precio": 7,
-            "img": "/app/public/img/pc1.webp"
         }
     ],
     "accesorios": [
@@ -154,7 +77,7 @@
             "title": "Rat\u00f3n Gamer ABC",
             "description": "Rat\u00f3n gaming con 16000 DPI",
             "precio": 50,
-            "img": "/app/public/img/ac2.webp"
+            "img": "/app/public/img/ac1.jpeg"
         },
         {
             "id": 3,
@@ -168,126 +91,35 @@
             "title": "Mousepad GHI",
             "description": "Mousepad gaming de gran tama\u00f1o",
             "precio": 20,
-            "img": "/app/public/img/ac1.jpeg"
+            "img": "/app/public/img/ac8.jpg"
         },
         {
             "id": 5,
             "title": "Silla Gamer JKL",
             "description": "Silla ergon\u00f3mica para gamers",
             "precio": 150,
-            "img": "/app/public/img/ac2.webp"
+            "img": "/app/public/img/7.jpg"
         },
         {
             "id": 6,
             "title": "Teclado Mec\u00e1nico MNO",
             "description": "Teclado mec\u00e1nico con switches Cherry MX",
             "precio": 120,
-            "img": "/app/public/img/ac2.webp"
+            "img": "/app/public/img/ac6.jpeg"
         },
         {
             "id": 7,
             "title": "Rat\u00f3n Gamer PQR",
             "description": "Rat\u00f3n gaming con iluminaci\u00f3n RGB",
             "precio": 60,
-            "img": "/app/public/img/ac2.webp"
+            "img": "/app/public/img/2.jpg"
         },
         {
             "id": 8,
             "title": "Auriculares Gamer STU",
             "description": "Auriculares gaming inal\u00e1mbricos",
             "precio": 100,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 9,
-            "title": "Mousepad VWX",
-            "description": "Mousepad gaming con superficie texturizada",
-            "precio": 25,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 10,
-            "title": "Silla Gamer YZA",
-            "description": "Silla gaming con soporte lumbar ajustable",
-            "precio": 170,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 11,
-            "title": "Teclado Mec\u00e1nico BCD",
-            "description": "Teclado mec\u00e1nico con teclas programables",
-            "precio": 110,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 12,
-            "title": "Rat\u00f3n Gamer EFG",
-            "description": "Rat\u00f3n gaming con dise\u00f1o ergon\u00f3mico",
-            "precio": 55,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 13,
-            "title": "Auriculares Gamer HIJ",
-            "description": "Auriculares gaming con cancelaci\u00f3n de ruido",
-            "precio": 120,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 14,
-            "title": "Mousepad KLM",
-            "description": "Mousepad gaming RGB",
-            "precio": 30,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 15,
-            "title": "Silla Gamer NOP",
-            "description": "Silla gaming con reposabrazos ajustables",
-            "precio": 180,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 16,
-            "title": "Teclado Mec\u00e1nico QRS",
-            "description": "Teclado mec\u00e1nico inal\u00e1mbrico",
-            "precio": 130,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 17,
-            "title": "Rat\u00f3n Gamer TUV",
-            "description": "Rat\u00f3n gaming con ajuste de peso",
-            "precio": 70,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 18,
-            "title": "Auriculares Gamer WXY",
-            "description": "Auriculares gaming con sonido envolvente",
-            "precio": 130,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 19,
-            "title": "Mousepad ZAB",
-            "description": "Mousepad gaming antideslizante",
-            "precio": 35,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 20,
-            "title": "Silla Gamer CDE",
-            "description": "Silla gaming con tapizado de cuero",
-            "precio": 200,
-            "img": "/app/public/img/ac2.webp"
-        },
-        {
-            "id": 21,
-            "title": "s",
-            "description": "dfs",
-            "precio": "22",
-            "img": "/app/public/img/66c4c2be3c484.png"
+            "img": "/app/public/img/1.webp"
         }
     ],
     "sillas": [

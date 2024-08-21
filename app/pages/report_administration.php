@@ -47,7 +47,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/app/models/products.php'; ?>
 
 <footer class="text-center mt-5">
     <p>&copy; 2024 <i class="fas fa-store"></i> Web Store Game. Todos los derechos reservados.</p>
-    <p>Desarrollado con <i class="fas fa-heart text-danger"></i> por Ing. José</p>
 </footer>
 
 
